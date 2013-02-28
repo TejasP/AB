@@ -1,4 +1,10 @@
 Alphabeta::Application.routes.draw do
+  resources :searches
+
+
+  resources :registrations
+
+
   resources :products
   
   match "/upload" => "products#upload"
