@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  orgname: MyString
+  orgpostcode: MyString
+  orgaddress1: MyString
+  orgaddress2: MyString
+
+two:
+  orgname: MyString
+  orgpostcode: MyString
+  orgaddress1: MyString
+  orgaddress2: MyString

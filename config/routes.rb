@@ -1,4 +1,7 @@
 Alphabeta::Application.routes.draw do
+  resources :organizations
+
+
   resources :searches
 
 
