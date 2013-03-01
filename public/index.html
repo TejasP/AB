@@ -200,7 +200,13 @@
           </li>
         </ul>
       </div>
-
+      <div>
+	   		<%= tabs_tag do |tab| %>
+	  		<%= tab.home      'Homepage', root_path %>
+	  		<%= tab.dashboard 'Dashboard', dashboard_path %>
+	  		<%= tab.account   'Account', account_path %>
+			<% end %>
+      </div>
       <div id="content">
         <div id="header">
           <h1>Welcome aboard</h1>
