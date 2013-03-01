@@ -7,6 +7,11 @@
     <th></th>
     <th></th>
   </tr>
+  <%= tabs_tag do |tab| %>
+  <%= tab.home      'Homepage', '/searches' %>
+  <%= tab.dashboard 'Dashboard', '/organizations' %>
+  <%= tab.account   'Account', '/registation' %>
+  <% end %>
 
 <% @searches.each do |search| %>
   <tr>
