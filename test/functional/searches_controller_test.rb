@@ -18,30 +18,30 @@ class SearchesControllerTest < ActionController::TestCase
 
   test "should create search" do
     assert_difference('Search.count') do
-      post :create, search: { searchword: @search.searchword }
+      post :create, :search => {  }
     end
 
     assert_redirected_to search_path(assigns(:search))
   end
 
   test "should show search" do
-    get :show, id: @search
+    get :show, :id => @search
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @search
+    get :edit, :id => @search
     assert_response :success
   end
 
   test "should update search" do
-    put :update, id: @search, search: { searchword: @search.searchword }
+    put :update, :id => @search, :search => {  }
     assert_redirected_to search_path(assigns(:search))
   end
 
   test "should destroy search" do
     assert_difference('Search.count', -1) do
-      delete :destroy, id: @search
+      delete :destroy, :id => @search
     end
 
     assert_redirected_to searches_path

@@ -2,23 +2,16 @@
 
 <table>
   <tr>
-    <th>Searchword</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
-  <%= tabs_tag do |tab| %>
-  <%= tab.home      'Homepage', '/searches' %>
-  <%= tab.dashboard 'Dashboard', '/organizations' %>
-  <%= tab.account   'Account', '/registrations' %>
-  <% end %>
 
 <% @searches.each do |search| %>
   <tr>
-    <td><%= search.searchword %></td>
     <td><%= link_to 'Show', search %></td>
     <td><%= link_to 'Edit', edit_search_path(search) %></td>
-    <td><%= link_to 'Destroy', search, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Destroy', search, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
