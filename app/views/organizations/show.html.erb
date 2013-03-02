@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Orgname:</b>
+  <%= @organization.orgname %>
+</p>
+
+<p>
+  <b>Orgpostcode:</b>
+  <%= @organization.orgpostcode %>
+</p>
+
+<p>
+  <b>Orgaddress1:</b>
+  <%= @organization.orgaddress1 %>
+</p>
+
+<p>
+  <b>Orgaddress2:</b>
+  <%= @organization.orgaddress2 %>
+</p>
+
+
+<%= link_to 'Edit', edit_organization_path(@organization) %> |
+<%= link_to 'Back', organizations_path %>
